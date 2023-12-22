@@ -35,6 +35,7 @@ async function run() {
             res.send(result)
         })
 
+
         app.post('/task', async (req, res) => {
             const task = req.body;
             const result = await taskCollection.insertOne(task)
@@ -93,7 +94,7 @@ run().catch(console.dir);
 
 // testing
 app.get('/', (req, res) => {
-    res.send('Server is running')
+    res.send('Server is running re baba')
 })
 
 app.listen(port, () => {
